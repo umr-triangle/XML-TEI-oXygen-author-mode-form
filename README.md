@@ -18,3 +18,11 @@ TO CUSTOMIZE:
 * change paths to rng, css in your XML File
 * open CSS File, change its name and adapt the CSS selectors according to your own XML file and RNG schema
 
+TO ADD a named entiy:
+
+* select text of the named entity
+* + right click
+* + choose "refactorisation",
+* + choose "encadrer avec des balises"
+* + choose the appropriate element (here, "rs")
+* + then the foldable list should appear on the right of the named entity : choose the appropriate named entity or type a new one and press ENTER.
