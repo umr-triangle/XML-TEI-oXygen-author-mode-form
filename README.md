@@ -12,6 +12,15 @@ TO USE:
 * open XML File in oXygen
 * open Author Mode in oXygen
 
+TO ADD a named entiy:
+
+* select text of the named entity
+* + right click
+* + choose "refactorisation",
+* + choose "encadrer avec des balises"
+* + choose the appropriate element (here, "rs")
+* + then the foldable list should appear on the right of the named entity : choose the appropriate named entity or type a new one and press ENTER.
+
 TO CUSTOMIZE: 
 
 * install your own XML file in the same directory
@@ -22,11 +31,3 @@ FURTHER HELP ON OXYGEN AUTHOR MODE AND CSS :
 * oXygen Video tutorial : http://www.oxygenxml.com/demo/CSS_Inspector.html
 * oXygen Documentation on the Oxygen XML Author CSS Extensions : http://mirror.oxygenxml.com/doc/ug-author/index.html#concepts/dg-oXygen-css-extensions.html
 
-TO ADD a named entiy:
-
-* select text of the named entity
-* + right click
-* + choose "refactorisation",
-* + choose "encadrer avec des balises"
-* + choose the appropriate element (here, "rs")
-* + then the foldable list should appear on the right of the named entity : choose the appropriate named entity or type a new one and press ENTER.
