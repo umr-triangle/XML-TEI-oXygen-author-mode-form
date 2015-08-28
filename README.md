@@ -17,7 +17,8 @@ TO CUSTOMIZE:
 * install your own XML file in the same directory
 * change paths to rng, css in your XML File
 * open CSS File, change its name and adapt the CSS selectors according to your own XML file and RNG schema
-* Further help with the oXygen Author mode : 
+
+FURTHER HELP ON OXYGEN AUTHOR MODE AND CSS : 
 * oXygen Video tutorial : http://www.oxygenxml.com/demo/CSS_Inspector.html
 * oXygen Documentation on the Oxygen XML Author CSS Extensions : http://mirror.oxygenxml.com/doc/ug-author/index.html#concepts/dg-oXygen-css-extensions.html
 
