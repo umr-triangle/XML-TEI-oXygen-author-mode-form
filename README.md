@@ -2,7 +2,7 @@
 
 Triangle digital edition team
 
-August 27th, 2015
+August 28th, 2015
 
 An oXygen Author mode form for editing TEI corpus (css stylesheet + rng schema + xml tei corpus sample). This form was initially used for editing the "Roman des Morand" XML TEI corpus file.
 
