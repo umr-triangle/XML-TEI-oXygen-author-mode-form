@@ -16,10 +16,11 @@ TO ADD a named entiy:
 
 * select text of the named entity
 * + right click
-* + choose "refactorisation",
-* + choose "encadrer avec des balises"
-* + choose the appropriate element (here, "rs")
-* + then the foldable list should appear on the right of the named entity : choose the appropriate named entity or type a new one and press ENTER.
+* + select "refactorisation",
+* + select "encadrer avec des balises"
+* + select the appropriate element (here, "rs")
+* + then the foldable list should appear on the right of the named entity : select the appropriate named entity or type a new one and press ENTER.
+* + select "TEI P5", and "actualiser les références"
 
 TO CUSTOMIZE: 
 
