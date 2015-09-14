@@ -818,7 +818,7 @@ color:#CC0033;
 }
 rs:after{
 visibility:-oxy-collapse-text;
-content:oxy_editor(type, combo, edit, "@ref", values, oxy_xpath('string-join(//persName/@ref, ",")'), selectionMode, "single", columns, 20);
+content:oxy_editor(type, combo, edit, "@ref", values, oxy_xpath('string-join(//*[self::rs or self::persName]/@ref,",")'), selectionMode, "single", columns, 20);
 }
 text body p{
 display:block;
