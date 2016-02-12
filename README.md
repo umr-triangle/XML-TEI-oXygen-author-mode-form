@@ -6,11 +6,24 @@ August 28th, 2015
 
 An oXygen Author mode form for editing TEI corpus (css stylesheet + rng schema + xml tei corpus sample). This form was initially used for editing the "Roman des Morand" XML TEI corpus file.
 
+February 12th, 2016 : updated into a oXygen project with a img folder for customizing the TEI P5 framework
+
 TO USE: 
 
 * download and unzip content - check that the whole content is in the same directory
-* open XML File in oXygen
+* open the morand.xpr (= the oXygen Morand project)
 * open Author Mode in oXygen
+* open the teiCorpus_Morand_sample.xml file in oXygen 
+* open the workshop.xml to test
+
+TEI P5 customization with our Morand project
+* Duplicate & rename TEI P5 framework
+* Customize : 
+* + add new actions like "ToggleSurroundWithElementOperation" for element del[@rend="overstrike"], add[@place="above"], etc. 
+* + for each new action use the img-my-framework folder images (png for the 20*20 px and .gif for 16*16 px)
+* Add your own XML and RNG files in the same directory + in the new framework
+* Or open the Morand CSS File, change its name and adapt the CSS selectors according to your own XML file and RNG schema
+
 
 TO ADD a named entiy:
 
@@ -24,9 +37,6 @@ TO ADD a named entiy:
 
 TO CUSTOMIZE: 
 
-* install your own XML file in the same directory
-* change paths to rng, css in your XML File
-* open CSS File, change its name and adapt the CSS selectors according to your own XML file and RNG schema
 
 FURTHER HELP ON OXYGEN AUTHOR MODE AND CSS : 
 * oXygen Video tutorial : http://www.oxygenxml.com/demo/CSS_Inspector.html
