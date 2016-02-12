@@ -443,18 +443,13 @@
                         <creation>
                               <date when="1787-05-28">28 mai 1787</date>
                               <location>
-                                    <placeName type="PlaceExp" ref="Lyon"
-                                        >Lyon</placeName>
+                                    <placeName type="PlaceExp" ref="Machi">Lyon</placeName>
                                     <geo>45.7589 4.84139</geo>
                               </location>
-                              <persName type="expediteur"
-                                    ref="Morand de Jouffrey_Antoine"
-                                    >Antoine
-                        Morand</persName>
-                              <persName type="destinataire"
-                                    ref="Morand_Antoinette"
-                                    >Antoinette
-                        Morand</persName>
+                              <persName type="expediteur" ref="Morand de Jouffrey_Antoine">Antoine
+                                    Morand</persName>
+                              <persName type="destinataire" ref="Morand_Antoinette">Antoinette
+                                    Morand</persName>
                         </creation>
                   </profileDesc>
             </teiHeader>
@@ -473,14 +468,15 @@
                               <p>
                                     <supplied>Naissance d'Olympe Bertrand de Besson, le 27 mai 1787.</supplied>
                               </p>
-                              <p><rs ref="Morand_Antoinette"
-                                    >Ma chère maman</rs> , </p>
-                              <p>Je ne veux pas me coucher sans vous parler de la joie que votre lettre du 27
-                        a répandue dans la maison, nous avons tous appris avec transport l'heureuse
-                        délivrance de ma petite sœur maintenant petite maman, quelque naturels que
-                        soient ces moments on ne peut se défendre de certains mouvements de crainte,
-                        surtout quand on est éloigné et que comme moi l'on a assisté à une scène qui
-                        ne s'effacera jamais de ma mémoire.</p>
+                              <p><rs ref="Morand_Antoinette">Ma chère maman</rs> , </p>
+                              <p>Je ne veux pas me coucher sans vous parler de la joie que votre
+                                    lettre du 27 a répandue dans la maison, nous avons tous appris
+                                    avec transport l'heureuse délivrance de <rs type="person"
+                                          ref="de Besson_Eleonore">ma petite sœur</rs> maintenant
+                                    petite maman, quelque naturels que soient ces moments on ne peut
+                                    se défendre de certains mouvements de crainte, surtout quand on
+                                    est éloigné et que comme moi l'on a assisté à une scène qui ne
+                                    s'effacera jamais de ma mémoire.</p>
                               <p>Nous voilà maintenant parfaitement tranquilles, et sur le compte de<rs
                                         ref="de Besson_Eleonore"
                                         >ma sœur</rs> et sur le vôtre par conséquent, il me
@@ -636,20 +632,19 @@
                             qui aurait rencontré «ant. » et dont il donnerait des nouvelles à sa
                             mère.</supplied>
                               </p>
-                              <p>A <rs ref="Morand_Antoinette"
-                                        >la Bonne maman d'Albine</rs>
+                              <p>A <rs>la Bonne maman d'Albine</rs>
                               </p>
-                              <p>Je ne peux <rs ref="Morand_Antoinette"
-                                        >ma chère amie</rs> expliquer mon
-                        silence auprès de vous, car je ne cesse cependant de penser à votre cruelle
-                        position et quoique je fasse pour éloigner de mon esprit cette terrible idée
-                        sans cesse elle me poursuit ; si j'étais près de vous et au milieu de nos
-                        amis communs, je ne craindrais point d'entretenir ma douleur en partageant
-                        la vôtre, mais j'avoue qu'isolé comme je le suis j'ai de la peine à la
-                        supporter, elle égare le peu de raison que j'ai et fait naître chez moi des
-                        instants de violence qui, dans tout autre pays, pourraient me compromettre ;
-                        je n'ai vraiment d'autre ressources que de chercher à m'étourdir et j'y
-                        réussis quelquefois. </p>
+                              <p>Je ne peux <rs>ma chère amie</rs> expliquer mon silence auprès de
+                                    vous, car je ne cesse cependant de penser à votre cruelle
+                                    position et quoique je fasse pour éloigner de mon esprit cette
+                                    terrible idée sans cesse elle me poursuit ; si j'étais près de
+                                    vous et au milieu de nos amis communs, je ne craindrais point
+                                    d'entretenir ma douleur en partageant la vôtre, mais j'avoue
+                                    qu'isolé comme je le suis j'ai de la peine à la supporter, elle
+                                    égare le peu de raison que j'ai et fait naître chez moi des
+                                    instants de violence qui, dans tout autre pays, pourraient me
+                                    compromettre ; je n'ai vraiment d'autre ressources que de
+                                    chercher à m'étourdir et j'y réussis quelquefois. </p>
                               <p>Il m'est impossible de relire votre première lettre, mais je la garde et la
                         relirai quand ma raison sera devenue la plus forte, ah <rs
                                         ref="Morand_Antoinette"
@@ -757,4 +752,5 @@
                   </back>
             </text>
       </TEI>
+     
 </teiCorpus>
