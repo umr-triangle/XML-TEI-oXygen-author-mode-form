@@ -4,7 +4,7 @@ Triangle digital edition team
 
 February 29th, 2016 - ducumentation update
 
-Use of our project to customize a TEI plugin in oXygen see : https://github.com/umr-triangle/XML-TEI-oXygen-author-mode-form/blob/master/Tutoriel-Adaptation-Framework-oXygen.pdf
+Use of our project to customize a TEI framework in oXygen see : https://github.com/umr-triangle/XML-TEI-oXygen-author-mode-form/blob/master/Tutoriel-Adaptation-Framework-oXygen.pdf
 
 August 28th, 2015
 
