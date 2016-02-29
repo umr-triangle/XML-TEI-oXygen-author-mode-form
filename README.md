@@ -2,6 +2,10 @@
 
 Triangle digital edition team
 
+February 29th, 2016 - ducumentation update
+
+Use of our project to customize a TEI plugin in oXygen see : https://github.com/umr-triangle/XML-TEI-oXygen-author-mode-form/blob/master/Tutoriel-Adaptation-Framework-oXygen.pdf
+
 August 28th, 2015
 
 An oXygen Author mode form for editing TEI corpus (css stylesheet + rng schema + xml tei corpus sample). This form was initially used for editing the "Roman des Morand" XML TEI corpus file.
