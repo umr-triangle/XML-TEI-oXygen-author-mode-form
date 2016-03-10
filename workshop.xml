@@ -2,7 +2,7 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="morand001">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="morand002">
       <teiHeader>
             <fileDesc>
                   <titleStmt>
@@ -18,7 +18,6 @@
                         <date when="2013">2013</date>
                         <idno>http://morand.ens-lyon.fr/lettre/morand401</idno>
                         <availability status="restricted">
-                              
                               <p>La correspondance est mise en ligne avec l’autorisation de la
                                     famille, conformément au document de prêt à usage. Les lettres
                                     ont été numérisées par Gilles Bernasconi, photographe des
@@ -30,7 +29,6 @@
                               <p> Louis Faivre d'Arcier</p>
                               <p> Directeur des Archives Municipales de Lyon - 1, place des Archives
                                     - 69002 Lyon</p>
-                             
                               <p>Etablir un lien vers ce site : La mise en place de liens vers le
                                     site Roman des Morand, y compris "profonds", n’est conditionnée
                                     à aucun accord préalable. Seule la mention explicite du site
@@ -97,11 +95,12 @@
                               conséquent, il me paraît qu'elle a été traitée bien doucement pour une
                               première fois, qu'elle ne soit point fâchée du sexe de son enfant et
                               qu'elle n'imagine pas que son mari doive l'être, je suis sûr que
-                              Besson aimera sa fille de tout son cœur et comme moi, ne voudra pas la
-                              changer contre un garçon ; pour moi je suis tout fier d'avoir une
-                              petite nièce de mon sang et la petite Olimpe me sera aussi chère dans
-                              la suite que l'Eléonore qui m'a toujours tendrement aimé et à qui je
-                              le rends bien.</p>
+                              Besson aimera sa fille de tout son cœur et comme moi, <del
+                                    rend="overstrike">ne voudra pas la changer</del> contre un
+                              garçon ; pour moi je suis tout fier d'avoir une petite nièce de mon
+                              sang et la petite Olimpe me sera aussi chère dans la suite que
+                              l'Eléonore qui m'a toujours tendrement aimé et à qui je le rends
+                              bien.</p>
                         <p>Nous avons envoyé chez mon oncle qui comme il nous l'avait annoncé, ne
                               s'informait pas du sexe de l'enfant mais seulement de la santé de la
                               mère, il a été enchanté d'apprendre qu'elle était aussi bonne qu'elle
