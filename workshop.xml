@@ -2,118 +2,23 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="morand001">
-      <teiHeader>
-            <fileDesc>
-                  <titleStmt>
-                        <title>Lettre d'Antoine à sa mère Antoinette, 28 mai 1787</title>
-                        <author key="Morand, Antoine (1760-1838)">Antoine Morand</author>
-                        <editor key="Verjus, Anne">Anne Verjus</editor>
-                        <editor key="Manchio, Corine">Corine Manchio</editor>
-                  </titleStmt>
-                  <publicationStmt>
-                        <publisher>Ecole Normale Supérieure de Lyon</publisher>
-                        <distributor>Archives Municipales de Lyon</distributor>
-                        <authority>Laboratoire Triangle</authority>
-                        <date when="2013">2013</date>
-                        <idno>http://morand.ens-lyon.fr/lettre/morand401</idno>
-                        <availability status="restricted">
-                              
-                              <p>La correspondance est mise en ligne avec l’autorisation de la
-                                    famille, conformément au document de prêt à usage. Les lettres
-                                    ont été numérisées par Gilles Bernasconi, photographe des
-                                    Archives municipales de Lyon.</p>
-                              <p>Ni les images, ni les transcriptions des lettres mises en ligne
-                                    issues du Fonds Morand ne peuvent être réutilisées.</p>
-                              <p>Pour plus d'informations, il vous est possible de nous envoyer un
-                                    courrier postal à l'adresse suivante : </p>
-                              <p> Louis Faivre d'Arcier</p>
-                              <p> Directeur des Archives Municipales de Lyon - 1, place des Archives
-                                    - 69002 Lyon</p>
-                             
-                              <p>Etablir un lien vers ce site : La mise en place de liens vers le
-                                    site Roman des Morand, y compris "profonds", n’est conditionnée
-                                    à aucun accord préalable. Seule la mention explicite du site
-                                    dans l’intitulé du lien est souhaitée.</p>
-                              <p>Il vous est également possible de nous envoyer un courrier postal à
-                                    l’une des adresses suivantes : Carole Boulai - ISH de Lyon - 14
-                                    avenue Berthelot, 69363 LYON cedex 07 ou Samantha Saïdi - ENS de
-                                    Lyon, R 264 - 15 parvis René Descartes - BP 7000, 69342 LYON
-                                    Cedex 07</p>
-                        </availability>
-                  </publicationStmt>
-                  <sourceDesc>
-                        <msDesc>
-                              <msIdentifier>
-                                    <country>France</country>
-                                    <settlement>Lyon</settlement>
-                                    <repository>Archives municipales de Lyon</repository>
-                                    <collection>Fonds Morand de Jouffrey</collection>
-                                    <idno>14 ii 35 2</idno>
-                              </msIdentifier>
-                        </msDesc>
-                  </sourceDesc>
-            </fileDesc>
-            <profileDesc>
-                  <langUsage>
-                        <language ident="fre"/>
-                  </langUsage>
-                  <creation>
-                        <date when="1798-02-08"/>
-                        <location>
-                              <placeName type="PlaceExp" ref="Lyon">Lyon</placeName>
-                              <geo/>
-                        </location>
-                        <persName type="expediteur" ref="Morand_Antoine">Antoine Morand</persName>
-                        <persName type="destinataire" ref="Morand_Antoinnette">Antoinnette
-                              Morand</persName>
-                  </creation>
-            </profileDesc>
-      </teiHeader>
-      <facsimile>
-            <graphic url=""/>
-            <graphic url=""/>
-      </facsimile>
-      <text>
-            <body>
-                  <div1 type="letter">
-                        <opener>Lyon, le 8 février 1798</opener>
-                        <p>
-                              <del rend="overstrike"><del rend="overtyped">Transcrire votre lettre
-                                          ici</del><add place="above">Ecrire ici votre lettre</add>.
-                                    Fragment à supprimer</del>. <rs type="person"
-                                    ref="Morand_Antoinnette">Très chère Maman</rs>, nous <del
-                                    rend="overtyped">arrivons</del>
-                              <add place="above">viendrons</add> aujourd'hui même à <rs type="place"
-                                    ref="Lyon">Lyon</rs>. </p>
-                        <p>Nous avons envoyé chez mon oncle <del rend="overtyped">qui comme il nous
-                                    l'avait annoncé, ne s'informait pas de l'état de
-                                    l'enfant</del><add place="margin">qui, en accord avec ce qu'il
-                                    nous avait annoncé préalablement, ne s'enquerrait pas de la
-                                    santé de l'enfant</add> mais <add place="below">seulement</add>
-                              de la santé de la mère.</p>
-                        <p>Nous voilà maintenant parfaitement tranquilles, et sur le compte de<rs
-                                    ref="de_Besson_Eleonore">ma sœur</rs> et sur le vôtre par
-                              conséquent, il me paraît qu'elle a été traitée bien doucement pour une
-                              première fois, qu'elle ne soit point fâchée du sexe de son enfant et
-                              qu'elle n'imagine pas que son mari doive l'être, je suis sûr que
-                              Besson aimera sa fille de tout son cœur et comme moi, ne voudra pas la
-                              changer contre un garçon ; pour moi je suis tout fier d'avoir une
-                              petite nièce de mon sang et la petite Olimpe me sera aussi chère dans
-                              la suite que l'Eléonore qui m'a toujours tendrement aimé et à qui je
-                              le rends bien.</p>
-                        <p>Nous avons envoyé chez mon oncle qui comme il nous l'avait annoncé, ne
-                              s'informait pas du sexe de l'enfant mais seulement de la santé de la
-                              mère, il a été enchanté d'apprendre qu'elle était aussi bonne qu'elle
-                              peut l'être après une pareille secousse, je l'ai fait dire à<rs
-                                    ref="de Chambery_M."><hi rend="bold">M. de Chambéry</hi></rs> ,
-                              je l'écrirai demain à <rs ref="de Champvieux_Mme">Mme de
-                                    Champvieux</rs>, et verrai <rs ref="Dodieu_M.">M. Dodieu</rs> .
-                              [...].</p>
-                  </div1>
-            </body>
-            <back>
-                  <div type="notes"/>
-            </back>
-      </text>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <p>Some text here.</p>
+      </body>
+  </text>
 </TEI>
