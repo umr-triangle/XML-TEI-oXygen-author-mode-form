@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Morand_TEI.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="morandEdition.css"?>
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0">
+      <teiHeader>
+            <fileDesc>
+                  <titleStmt>
+                        <title>Le Roman des Morand</title>
+                        <author key="Morand, Antoine (1760-1838)"
+                              >Antoine Morand</author>
+                        <author key="Morand, Magdeleine (1766-1847)"
+                              >Magdeleine Morand</author>
+                        <author key="Morand, Antoinette (1734-1812)"
+                              >Antoinette Morand</author>
+                        <author key="Tempier, Fondos">Fondos Tempier</author>
+                        <author key="Tempier, Jean-André"
+                              >Jean-André Tempier</author>
+                        <author key="de Besson, Olympe"
+                              >Olympe de Besson</author>
+                        <editor key="Verjus, Anne">Anne Verjus</editor>
+                        <editor key="Manchio, Corine">Corine Manchio</editor>
+                  </titleStmt>
+                  <publicationStmt>
+                        <publisher>Ecole Normale Supérieure de Lyon</publisher>
+                        <distributor>Archives Municipales de Lyon</distributor>
+                        <authority>Laboratoire Triangle</authority>
+                        <date when="2013">2013</date>
+                        <idno>http://morand.ens-lyon.fr/</idno>
+                        <availability status="restricted">
+                              <p>La correspondance est mise en ligne avec l’autorisation de la
+                                    famille, conformément au document de prêt à usage. Les lettres
+                                    ont été numérisées par Gilles Bernasconi, photographe des
+                                    Archives municipales de Lyon.</p>
+                              <p>Ni les images, ni les transcriptions des lettres mises en ligne
+                                    issues du Fonds Morand ne peuvent être réutilisées.</p>
+                              <p>Pour plus d'informations, il vous est possible de nous envoyer un
+                                    courrier postal à l'adresse suivante : </p>
+                              <p> Louis Faivre d'Arcier</p>
+                              <p> Directeur des Archives Municipales de Lyon - 1, place des Archives
+                                    - 69002 Lyon</p>
+                              <p>Conditions de réutilisation de la mise en valeur scientifique :
+                                    Toute citation doit faire l’objet d’une introduction précisant
+                                    le nom de l’auteur et l’adresse URL du site Roman des Morand.
+                                    </p>
+                              <p>Etablir un lien vers ce site : La mise en place de liens vers le
+                                    site Roman des Morand, y compris "profonds", n’est conditionnée
+                                    à aucun accord préalable. Seule la mention explicite du site
+                                    dans l’intitulé du lien est souhaitée.</p>
+                              <p>Il vous est également possible de nous envoyer un courrier postal à
+                                    l’une des adresses suivantes : Carole Boulai - ISH de Lyon - 14
+                                    avenue Berthelot, 69363 LYON cedex 07 ou Samantha Saïdi - ENS de
+                                    Lyon, R 264 - 15 parvis René Descartes - BP 7000, 69342 LYON
+                                    Cedex 07</p>
+                        </availability>
+                  </publicationStmt>
+                  <notesStmt>
+                        <note type="abstract"
+                              >Edition numérique de la correspondance conjugale et familiale
+                    d'un couple lyonnais ayant vécu sous la Révolution française et sous l'Empire :
+                    Antoine et Magdeleine Morand de Jouffrey. Cette correspondance fait partie du
+                    fonds Morand (ensemble de manuscrits, de correspondances, de dossiers familiaux,
+                    d’estampes, de dessins, de plans d’architecture) conservé par les Archives
+                    Municipales de Lyon. </note>
+                  </notesStmt>
+                  <sourceDesc>
+                        <msDesc>
+                              <msIdentifier>
+                                    <country>France</country>
+                                    <settlement>Lyon</settlement>
+                                    <repository>Archives municipales de Lyon</repository>
+                                    <collection>Fonds Morand de Jouffrey</collection>
+                                    <idno type="FRAC069123">14 ii</idno>
+                              </msIdentifier>
+                        </msDesc>
+                        <listPerson>
+                              <person xml:id="pers038">
+                                    <persName ref="Abrial_M.">
+                                        <surname>Abrial</surname>
+                                        <forename>M.</forename>
+                                    </persName>
+                              </person>
+                              <person xml:id="pers039">
+                                    <persName ref="Achet_M.">
+                                        <surname>Achet</surname>
+                                        <forename>M.</forename>
+                                    </persName>
+                              </person>
+                              <person xml:id="pers040">
+                                    <persName
+                                        ref="Adanchy, Avanchy ou Adamoli_M.">
+                                        <surname>Adanchy, Avanchy ou Adamoli</surname>
+                                        <forename>M.</forename>
+                                    </persName>
+                              </person>
+                        </listPerson>
+                        <listPlace>
+                              <place xml:id="pl000">
+                                    <placeName ref="Lieu d’écriture inconnu">
+                                        <location>
+                                        <geo/>
+                                        </location>
+                                    </placeName>
+                              </place>
+                              <place xml:id="pl001">
+                                    <placeName ref="Lyon">
+                                        <location>
+                                        <geo>45.7589 4.84139</geo>
+                                        </location>
+                                    </placeName>
+                              </place>
+                              <place xml:id="pl002">
+                                    <placeName ref="Grenoble">
+                                        <location>
+                                        <geo>45.1869 5.72639</geo>
+                                        </location>
+                                    </placeName>
+                              </place>
+                              <place xml:id="pl003">
+                                    <placeName ref="Paris">
+                                        <location>
+                                        <geo/>
+                                        </location>
+                                    </placeName>
+                              </place>
+                              <place xml:id="pl004">
+                                    <placeName ref="Machi">
+                                        <location>
+                                        <geo>45.86264732 4.75910783</geo>
+                                        </location>
+                                    </placeName>
+                              </place>
+                              <place xml:id="pl005">
+                                    <placeName ref="Briançon">
+                                        <location>
+                                        <geo>44.8958 6.635</geo>
+                                        </location>
+                                    </placeName>
+                              </place>
+                              <place xml:id="pl006">
+                                    <placeName ref="Genève">
+                                        <location>
+                                        <geo>46.207 6.14234</geo>
+                                        </location>
+                                    </placeName>
+                              </place>
+                              <place xml:id="pl007">
+                                    <placeName ref="Châtillon">
+                                        <location>
+                                        <geo>46.0872 6.5825</geo>
+                                        </location>
+                                    </placeName>
+                              </place>
+                              <place xml:id="pl008">
+                                    <placeName ref="Sion">
+                                        <location>
+                                        <geo>46.2317 7.36698</geo>
+                                        </location>
+                                    </placeName>
+                              </place>
+                              <place xml:id="pl009">
+                                    <placeName ref="Ménerbes">
+                                        <location>
+                                        <geo>43.8322 5.20639</geo>
+                                        </location>
+                                    </placeName>
+                              </place>
+                              <place xml:id="pl010">
+                                    <placeName ref="Fontaine">
+                                        <location>
+                                        <geo>45.1931 5.685</geo>
+                                        </location>
+                                    </placeName>
+                              </place>
+                              <place xml:id="pl011">
+                                    <placeName ref="Villefranche">
+                                        <location>
+                                        <geo>45.9897 4.71972</geo>
+                                        </location>
+                                    </placeName>
+                              </place>
+                              <place xml:id="pl012">
+                                    <placeName ref="Nice">
+                                        <location>
+                                        <geo>45.1197 5.67167</geo>
+                                        </location>
+                                    </placeName>
+                              </place>
+                              <place xml:id="pl013">
+                                    <placeName ref="Lucy">
+                                        <location>
+                                        <geo/>
+                                        </location>
+                                    </placeName>
+                              </place>
+                              <place xml:id="pl014">
+                                    <placeName ref="Curis">
+                                        <location>
+                                        <geo>45.8703 4.82111</geo>
+                                        </location>
+                                    </placeName>
+                              </place>
+                              <place xml:id="pl015">
+                                    <placeName ref="Cossey">
+                                        <location>
+                                        <geo>45.1197 5.67167</geo>
+                                        </location>
+                                    </placeName>
+                              </place>
+                              <place xml:id="pl016">
+                                    <placeName ref="Miralou">
+                                        <location>
+                                        <geo/>
+                                        </location>
+                                    </placeName>
+                              </place>
+                        </listPlace>
+                  </sourceDesc>
+            </fileDesc>
+            <encodingDesc>
+                  <!--description du projet en détail du but ou de l’objectif visé dans l’encodage d’un fichier électronique, ou information pertinente sur la manière dont il a été construit ou recueilli. -->
+                  <projectDesc>
+                        <p>La correspondance d'Antoine Morand fait partie du Fonds Morand. Elle fait l'objet
+                    d'une première vague de numérisation et d'une mise en ligne au printemps 2013.
+                    Les lettres sont encodées en XML TEI et éditées, suite à une série de
+                    transformations xslt et x-query, grâce au logiciel Omeka. En regard des
+                    transcriptions on trouve les facs-similés photographiés selon un protocole de
+                    numérisation prédéfini. L'ensemble du corpus est enrichi de notices
+                    biographiques et historiques. Il est interrogeable en plein-texte et grâce des
+                    index de personnes (expéditeurs, destinataires), localisation géographique,
+                    dates. Une deuxième version de cette édition (augmentée d'une deuxième vague de
+                    numérisation et de transcriptions) sera mise en ligne courant 2015.</p>
+                        <p>Antoine Morand de Jouffrey, né en 1760, est un notable lyonnais héritier de
+                    l'immense fortune accumulée par ses parents, l'architecte Jean Antoine Morand et
+                    son épouse Antoinette Levet. Il a fait des études de droit et exercera la
+                    fonction de juge, tout en consacrant une grande partie de son temps à la
+                    réparation, à l'entretien et à la gestion du quartier des Brotteaux, ainsi que
+                    du pont Morand, construit par son père et détruit pendant la Révolution. Il
+                    habitera successivement rue du Plat, rue Saint Dominique puis rue des Deux
+                    Maisons (toutes trois situées autour de la place Bellecour). Il se marie en 1785
+                    avec une riche héritière, Magdeleine Guilloud. Le couple aura trois enfants,
+                    Albine, James et Eléonore.</p>
+                        <p>Leur correspondance commence en 1794, époque à laquelle Antoine choisit de
+                    s'exiler à Briançon, pour échapper à d'éventuelles poursuites. Son père,
+                    emprisonné en novembre 1793, accusé d'avoir détruit son pont pour couper
+                    l'avancée des troupes républicaines assiégeant Lyon, sera guillotiné en janvier
+                    1794.</p>
+                        <p>Cette correspondance conjugale se poursuivra à chacune de leurs séparations, soit
+                    parce qu'Antoine doit se rendre à Paris pour obtenir les moyens de financer les
+                    réparations du pont, soit parce que l'un ou l'autre se rend auprès d'Antoinette
+                    Morand, à Grenoble. Elle concerne donc les années 1796, 1801, 1802, 1804, 1807.
+                    Quelques lettres, éparses, ponctuent les creux entre ces dates, lorsqu'Antoine
+                    reste à l'appartement à Lyon et que Magdeleine séjourne au château de Machy, au
+                    nord de Lyon.</p>
+                        <p>Cette correspondance conjugale se double d'une autre correspondance qui vient
+                    utilement éclairer les moments où le couple, réuni, ne s'écrit pas. Il s'agit
+                    des lettres échangées entre Antoine et sa mère Antoinette entre 1798 et 1812 :
+                    suite à un conflit autour de l'héritage, Antoinette quitte définitivement sa
+                    ville de Lyon pour vivre, avec sa belle-sœur, non loin de chez sa fille Eléonore
+                    de Besson à Grenoble.</p>
+                        <p>Plusieurs moments forts ponctuent les vies de ces trois personnes : le départ en
+                    exil d'Antoine à l'automne 1793 ; l'exécution de Jean Antoine Morand, en janvier
+                    1794 ; le procès entre le fils et la mère, en 1796 ; le départ d'Antoinette pour
+                    Grenoble, en 1798 ; l'obtention d'un décret pour le doublement du péage en 1796,
+                    puis d'une loi pour l'exemption d'impôts en 1801, pour le pont ; les discussions
+                    pour le mariage d'Albine, en 1805 ; le décès d'Albine en 1807, et le conflit qui
+                    s'ensuivit entre Antoine et Magdeleine pendant l'hiver 1807-1808. Enfin, ce qui
+                    clôt la correspondance ici retranscrite, le décès d'Antoinette en 1812.</p>
+                  </projectDesc>
+                  <samplingDecl>
+                        <p>Le fonds Morand est conservé aux Archives municipales de Lyon sous la cote 14II
+                    principalement. Il est constitué des archives de la famille Morand de Jouffrey
+                    depuis le XVIIème siècle jusqu'au début du XXème siècle. Jusqu'au moment de leur
+                    dépôt par la famille en 1978 puis en 1994, les lettres ont fait l'objet d'un
+                    soin tout particulier de la part de la famille qui les a triées, numérotées,
+                    étiquetées, entreposées à l'abri de l'humidité, de la poussière et de la
+                    lumière. C'est ainsi que ce fonds, qui compte une centaine de cartons, nous est
+                    parvenu dans un état de conservation remarquable. On y trouve plusieurs milliers
+                    de lettres, des dossiers, agendas de voyage, listes de toutes sortes,
+                    ordonnances de médecin, de multiples gravures, dessins, estampes, des tableaux,
+                    des cartes, et un très grand nombre de plans dessinés et peints par l'architecte
+                    Jean Antoine Morand. Il a déjà donné lieu à trois expositions et fait l'objet de
+                    plusieurs monographies. Voir également le descriptif détaillé du fonds.</p>
+                        <p>Les Archives municipales de Lyon conservent les archives de la famille Morand de
+                    Jouffrey, qu’elles ont reçues en prêt à usage en 1994. Cet important ensemble de
+                    manuscrits, de correspondances, de dossiers familiaux, d’estampes, de dessins,
+                    de plans d’architecture est dénommé FOND MORAND.</p>
+                        <p>Selon la typologie des documents, en raison de conditions différentes de
+                    conservation, il porte plusieurs cotes : <lb/>14 II : archives familiales,
+                    dessins et estampes (17e – début 20e siècle) <lb/>SMO : plans de l’architecte
+                    Jean Antoine Morand (2e moitié 18e siècle) <lb/>1 SMO : plans de grand format
+                    <lb/>2 SMO : plans de moyen format <lb/>3 SMO : plans de petit format <lb/>1 II
+                    255 petit ensemble de documents émouvants de la période révolutionnaire,
+                    correspondant au 2ème dépôt Morand de Jouffrey. <lb/>A ce fonds s’ajoutent
+                    quelques documents isolés acquis lors de ventes par les Archives municipales de
+                    Lyon : <lb/>1 II 116 : Antoine Morand de Jouffrey : brevet de l'ordre du Lys
+                    1814 <lb/>1 II 254: : documents familiaux et relatifs au pont Morand (18e-19e
+                    siècles) <lb/>1 II 277 : documents relatifs au pont Morand et à l’érection du
+                    monument des Brotteaux (1765-1818 <lb/>1 II 286 : Ordre de paiement au profit de
+                    Jean Antoine Morand, intimé au consulat lyonnais, Soufflot, Tholozan, la veuve
+                    Milannois et Munet, à la date du 22 octobre 1779 <lb/>1 II 325 : Lettre
+                    d'affaire, minute de la main de l'architecte lyonnais Jean Antoine Morand, datée
+                    de Lyon, le 27 septembre 1756. <lb/>1 II 449 : Documents préparatoires pour
+                    l'établissement d'un mémoire sur le pont Morand et concernant son origine et les
+                    titres de la concession, le nombre et la valeur des actions, le rétablissement
+                    du péage, l'exemption du droit de péage aux actionnaires du pont (fin 18e
+                    siècle) <lb/>1 II 475 : Livre de raison de Monsieur Morand de Pont de Veyle
+                    (s.d., vers 1750-1760) <lb/>95 II : carnets et agendas de Jean-Antoine et
+                    Antoine Morand <lb/>3 S 1470 : plan du pont Morand (Jean-Antoine Morand)</p>
+                  </samplingDecl>
+                  <appInfo>
+                        <!--fournit des informations sur une application qui a été utilisée pour le traitement du document.-->
+                        <application ident="oXygen" version="8.2">
+                              <label>oXygen</label>
+                        </application>
+                  </appInfo>
+                  <editorialDecl>
+                        <correction status="medium">
+                              <!--(règles de correction) établit comment et dans quelles circonstances des corrections ont été apportées au texte.-->
+                              <p>La plus grande partie de cette correspondance a été retranscrite. Nous avons
+                        cependant écarté les comptes-rendus, souvent fastidieux, de l'argent dépensé
+                        et gagné ; le récit parfois répétitif des visites rendues ; les infinies
+                        salutations et recommandations lorsqu'elles n'apportaient pas d'éléments
+                        d'information. Pour pallier ces absences, dont le choix est tout à fait
+                        subjectif, cette retranscription se double d'une édition numérique
+                        permettant de se reporter à l'intégralité des lettres manuscrites.</p>
+                              <p>Nous avons ajouté, en revanche, des textes qui ne forment pas, à proprement
+                        parler, de la correspondance. Ainsi, ce quatrain recopié à la main par
+                        Antoine, sur le tutoiement. Ou bien le mémoire sur son histoire
+                        physiologique, remis au médecin Louis Vitet.</p>
+                              <p>Afin de faciliter la lecture et la compréhension de ces lettres, nous avons
+                        également rétabli l'orthographe moderne. Les fautes d'accord, nombreuses, ne
+                        nous ont pas paru intéressantes à conserver, même pour une histoire de la
+                        langue.</p>
+                              <p>En revanche, nous avons maintenu l'orthographe, souvent évolutive, des noms
+                        propres. La particule, notamment, se promène, au gré des gouvernements :
+                        collée au patronyme pendant la période de la Terreur, parfois disparue, on
+                        la voit réapparaître et se distinguer lorsqu'il redevient avantageux
+                        d'afficher sa noblesse, comme sous l'Empire. D'une manière plus générale,
+                        les noms sont orthographiés comme on les entend, et selon une écriture
+                        parfois difficile à déchiffrer. Contrairement aux noms communs, le doute sur
+                        une lettre ne s'éclaircit pas à la lecture globale du mot. Une lettre entre
+                        un t et un e peut aussi bien être un h qu'un r, par exemple. Seule la
+                        répétition de ces noms propres permet, à la fin, de les identifier de
+                        manière certaine. 250 noms ont ainsi été identifiés (voir ici l'index
+                        complet des personnes citées), avec parfois plusieurs orthographes entre
+                        lesquelles nous n'avons pas souhaité trancher.</p>
+                              <p>Machi, qui aujourd'hui s'épèle Machy, n'est pas orthographié de la même
+                        manière par Antoine, qui emploie le i, que par les documents officiels de
+                        l'époque qui utilisent déjà le y. Nous n'avons rien rétabli, choisissant ici
+                        de privilégier la préférence du scripteur. </p>
+                        </correction>
+                        <segmentation>
+                              <!--décrit les principes selon lesquels le texte a été segmenté, par exemple en phrases, en strates graphématiques (niveaux superposés de signes graphiques), etc.-->
+                              <p>Les retours à la ligne n'ont pas été conservés. L'unité textuelle retenue est
+                        le paragraphe, marqué par les p.</p>
+                        </segmentation>
+                  </editorialDecl>
+            </encodingDesc>
+            <profileDesc>
+                  <creation>
+                        <date from="1787" to="1823">1787-1823</date>
+                        <date when="2013-05-15"
+                              >Année de la publication numérique : 15 mai 2013</date>
+                  </creation>
+            </profileDesc>
+      </teiHeader>
+      <TEI xml:id="morand401">
+            <teiHeader>
+                  <fileDesc>
+                        <titleStmt>
+                              <title>Lettre d'Antoine à sa mère Antoinette, 28 mai 1787</title>
+                              <author key="Morand, Antoine (1760-1838)"
+                                    >Antoine Morand</author>
+                              <editor key="Verjus, Anne">Anne Verjus</editor>
+                              <editor key="Manchio, Corine"
+                                    >Corine Manchio</editor>
+                        </titleStmt>
+                        <publicationStmt>
+                              <publisher>Ecole Normale Supérieure de Lyon</publisher>
+                              <distributor>Archives Municipales de Lyon</distributor>
+                              <authority>Laboratoire Triangle</authority>
+                              <date when="2013">2013</date>
+                              <idno>http://morand.ens-lyon.fr/lettre/morand401</idno>
+                              <availability status="restricted">
+                              <p>La correspondance est mise en ligne avec l’autorisation de la
+                                    famille, conformément au document de prêt à usage. Les lettres
+                                    ont été numérisées par Gilles Bernasconi, photographe des
+                                    Archives municipales de Lyon.</p>
+                              <p>Ni les images, ni les transcriptions des lettres mises en ligne
+                                    issues du Fonds Morand ne peuvent être réutilisées.</p>
+                              <p>Pour plus d'informations, il vous est possible de nous envoyer un
+                                    courrier postal à l'adresse suivante : </p>
+                              <p> Louis Faivre d'Arcier</p>
+                              <p> Directeur des Archives Municipales de Lyon - 1, place des Archives
+                                    - 69002 Lyon</p>
+                              <p>Etablir un lien vers ce site : La mise en place de liens vers le
+                                    site Roman des Morand, y compris "profonds", n’est conditionnée
+                                    à aucun accord préalable. Seule la mention explicite du site
+                                    dans l’intitulé du lien est souhaitée.</p>
+                              <p>Il vous est également possible de nous envoyer un courrier postal à
+                                    l’une des adresses suivantes : Carole Boulai - ISH de Lyon - 14
+                                    avenue Berthelot, 69363 LYON cedex 07 ou Samantha Saïdi - ENS de
+                                    Lyon, R 264 - 15 parvis René Descartes - BP 7000, 69342 LYON
+                                    Cedex 07</p>
+                              </availability>
+                        </publicationStmt>
+                        <sourceDesc>
+                              <msDesc>
+                                    <msIdentifier>
+                                        <country>France</country>
+                                        <settlement>Lyon</settlement>
+                                        <repository>Archives municipales de Lyon</repository>
+                                        <collection>Fonds Morand de Jouffrey</collection>
+                                        <idno>14 ii 35 2</idno>
+                                    </msIdentifier>
+                              </msDesc>
+                        </sourceDesc>
+                  </fileDesc>
+                  <profileDesc>
+                        <langUsage>
+                              <language ident="fre"/>
+                        </langUsage>
+                        <creation>
+                              <date when="1787-05-28">28 mai 1787</date>
+                              <location>
+                                    <placeName type="PlaceExp" ref="Machi">Lyon</placeName>
+                                    <geo>45.7589 4.84139</geo>
+                              </location>
+                              <persName type="expediteur" ref="Morand_de_Jouffrey_Antoine">Antoine
+                                    Morand</persName>
+                              <persName type="destinataire" ref="Morand_Antoinette">Antoinette
+                                    Morand</persName>
+                        </creation>
+                  </profileDesc>
+            </teiHeader>
+            <facsimile>
+                  <graphic url="14II_35_2_1787_05_28_1.jpg"/>
+                  <graphic url="14II_35_2_1787_05_28_2.jpg"/>
+            </facsimile>
+            <text>
+                  <body>
+                        <div1 type="letter">
+                              <opener>
+                                    <address>
+                        <addrLine>Adresse ?</addrLine>
+                     </address>Lyon,
+                        ce 28 may à 10 heures du soir</opener>
+                              <p>
+                                    <supplied>Naissance d'Olympe Bertrand de Besson, le 27 mai 1787.</supplied>
+                              </p>
+                              <p><rs ref="Morand_Antoinette">Ma chère maman</rs> , </p>
+                              <p>Je ne veux pas me coucher sans vous parler de la joie que votre
+                                    lettre du 27 a répandue dans la maison, nous avons tous appris
+                                    avec transport l'heureuse délivrance de <rs type="person"
+                                          ref="de_Besson_Eleonore">ma petite sœur</rs> maintenant
+                                    petite maman, quelque naturels que soient ces moments on ne peut
+                                    se défendre de certains mouvements de crainte, surtout quand on
+                                    est éloigné et que comme moi l'on a assisté à une scène qui ne
+                                    s'effacera jamais de ma mémoire.</p>
+                              <p>Nous voilà maintenant parfaitement tranquilles, et sur le compte
+                                          de<rs ref="de_Besson_Eleonore">ma sœur</rs> et sur le
+                                    vôtre par conséquent, il me paraît qu'elle a été traitée bien
+                                    doucement pour une première fois, qu'elle ne soit point fâchée
+                                    du sexe de son enfant et qu'elle n'imagine pas que son mari
+                                    doive l'être, je suis sûr que<rs ref="de_Besson_Eleonore"
+                                          >Besson</rs> aimera sa fille de tout son cœur et comme
+                                    moi, ne voudra pas la changer contre un garçon ; pour moi je
+                                    suis tout fier d'avoir une petite nièce de mon sang et la petite
+                                    Olimpe me sera aussi chère dans la suite que l'<rs
+                                          ref="de_Besson_Eleonore">Eléonore</rs> qui m'a toujours
+                                    tendrement aimé et à qui je le rends bien.</p>
+                              <p>Nous avons envoyé chez mon oncle qui comme il nous l'avait annoncé,
+                                    ne s'informait pas du sexe de l'enfant mais seulement de la
+                                    santé de la mère, il a été enchanté d'apprendre qu'elle était
+                                    aussi bonne qu'elle peut l'être après une pareille secousse, je
+                                    l'ai fait dire à<rs ref="de_Chambery_M.">M. de Chambéry</rs> ,
+                                    je l'écrirai demain à <rs ref="de_Champvieux_Mme">Mme de
+                                          Champvieux</rs>, et verrai <rs ref="Dodieu_M.">M.
+                                          Dodieu</rs> . [...].</p>
+                              <p><rs ref="Morand_de_Jouffrey_Marie">Ma bonne amie</rs> est dans la
+                                    plus grande joie, elle embrasse et félicite bien sa sœur, elle
+                                    la prie de donner de sa part à<rs ref="de_Besson_Olimpe">la
+                                          petite Olimpe</rs> un baiser bien tendre c'est-à-dire un
+                                    baiser de mère ;<rs ref="Morand_de_Jouffrey_Albine">Albine</rs>
+                                    aimera bien cette petite cousine, l'attachement des pères et
+                                    mères est un sentiment constant qui sans diminuer se perpétuera
+                                    et unira les enfants.</p>
+                              <p>Adieu <rs ref="Morand_Antoinette"
+                                        >ma chère maman</rs> , je vais me coucher,
+                        mais bien plus content que je l'ai été depuis votre départ, je suis
+                        tranquille maintenant sur la santé de tout ce qui m'est cher et si mon
+                        sommeil est interrompu ce ne sera désormais que par des songes
+                        agréables.</p>
+                              <p>Ayez la bonté de nous donner exactement des nouvelles, de la santé de la
+                        nouvelle maman et croyez que le tendre attachement que j'ai pour la mienne
+                        est toujours pour moi un sentiment délicieux. Je suis avec respect, <rs
+                                        ref="Morand_Antoinette"
+                                    >chère maman</rs> , votre très humble et très
+                        obéissant serviteur et fils. Morand de Jouffrey. </p>
+                        </div1>
+                  </body>
+                  <back>
+                        <div type="notes"/>
+                  </back>
+            </text>
+      </TEI>
+      <TEI xml:id="morand403">
+            <teiHeader>
+                  <fileDesc>
+                        <titleStmt>
+                              <title>Lettre d'Antoine à sa mère Antoinette, 13 avril 1794</title>
+                              <author key="Morand, Antoine (1760-1838)"
+                                    >Antoine Morand</author>
+                              <editor key="Verjus, Anne">Anne Verjus</editor>
+                              <editor key="Manchio, Corine"
+                                    >Corine Manchio</editor>
+                        </titleStmt>
+                        <publicationStmt>
+                              <publisher>Ecole Normale Supérieure de Lyon</publisher>
+                              <distributor>Archives Municipales de Lyon</distributor>
+                              <authority>Laboratoire Triangle</authority>
+                              <date when="2013">2013</date>
+                              <idno>http://morand.ens-lyon.fr/lettre/morand403</idno>
+                              <availability status="restricted">
+                                    <p>La correspondance est mise en ligne avec l’autorisation de la
+                                          famille, conformément au document de prêt à usage. Les lettres
+                                          ont été numérisées par Gilles Bernasconi, photographe des
+                                          Archives municipales de Lyon.</p>
+                                    <p>Ni les images, ni les transcriptions des lettres mises en ligne
+                                          issues du Fonds Morand ne peuvent être réutilisées.</p>
+                                    <p>Pour plus d'informations, il vous est possible de nous envoyer un
+                                          courrier postal à l'adresse suivante : </p>
+                                    <p> Louis Faivre d'Arcier</p>
+                                    <p> Directeur des Archives Municipales de Lyon - 1, place des
+                                          Archives - 69002 Lyon</p>
+                                    <p>Etablir un lien vers ce site : La mise en place de liens vers le
+                                          site Roman des Morand, y compris "profonds", n’est conditionnée
+                                          à aucun accord préalable. Seule la mention explicite du site
+                                          dans l’intitulé du lien est souhaitée.</p>
+                                    <p>Il vous est également possible de nous envoyer un courrier postal à
+                                          l’une des adresses suivantes : Carole Boulai - ISH de Lyon - 14
+                                          avenue Berthelot, 69363 LYON cedex 07 ou Samantha Saïdi - ENS de
+                                          Lyon, R 264 - 15 parvis René Descartes - BP 7000, 69342 LYON
+                                          Cedex 07</p>
+                              </availability>
+                        </publicationStmt>
+                        <sourceDesc>
+                              <msDesc>
+                                    <msIdentifier>
+                                        <country>France</country>
+                                        <settlement>Lyon</settlement>
+                                        <repository>Archives municipales de Lyon</repository>
+                                        <collection>Fonds Morand de Jouffrey</collection>
+                                        <idno>14 ii 35 2/ Lettres de mon fils écrites de Briançon à l'époque de
+                                mon malheur.</idno>
+                                    </msIdentifier>
+                              </msDesc>
+                        </sourceDesc>
+                  </fileDesc>
+                  <profileDesc>
+                        <langUsage>
+                              <language ident="fre"/>
+                        </langUsage>
+                        <creation>
+                              <date when="1794-04-13">13 avril 1794</date>
+                              <location>
+                                    <placeName type="PlaceExp" ref="Briançon">Briançon</placeName>
+                                    <geo>44.8958 6.635</geo>
+                              </location>
+                              <persName type="expediteur" ref="Morand_de_Jouffrey_Antoine">Antoine
+                                    Morand</persName>
+                              <persName type="destinataire" ref="Morand_Antoinette">Antoinette
+                                    Morand</persName>
+                        </creation>
+                  </profileDesc>
+            </teiHeader>
+            <facsimile>
+                  <graphic url="14II_35_2_1794_04_13_1.jpg"/>
+                  <graphic url="14II_35_2_1794_04_13_2.jpg"/>
+            </facsimile>
+            <text>
+                  <body>
+                        <div1 type="letter">
+                              <opener>
+                                    <address>
+                        <addrLine>Sans adresse</addrLine>
+                     </address>Le
+                        24 germinal l'an 2 de la République française une et indivisible</opener>
+                              <p>
+                                    <supplied>Exilé, recherché, Antoine se fait passer pour un ami de la famille
+                            qui aurait rencontré «ant. » et dont il donnerait des nouvelles à sa
+                            mère.</supplied>
+                              </p>
+                              <p>A <rs ref="Morand_Antoinette">la Bonne maman d'Albine</rs>
+                              </p>
+                              <p>Je ne peux <rs ref="Morand_Antoinette">ma chère amie</rs> expliquer
+                                    mon silence auprès de vous, car je ne cesse cependant de penser
+                                    à votre cruelle position et quoique je fasse pour éloigner de
+                                    mon esprit cette terrible idée sans cesse elle me poursuit ; si
+                                    j'étais près de vous et au milieu de nos amis communs, je ne
+                                    craindrais point d'entretenir ma douleur en partageant la vôtre,
+                                    mais j'avoue qu'isolé comme je le suis j'ai de la peine à la
+                                    supporter, elle égare le peu de raison que j'ai et fait naître
+                                    chez moi des instants de violence qui, dans tout autre pays,
+                                    pourraient me compromettre ; je n'ai vraiment d'autre ressources
+                                    que de chercher à m'étourdir et j'y réussis quelquefois. </p>
+                              <p>Il m'est impossible de relire votre première lettre, mais je la garde et la
+                        relirai quand ma raison sera devenue la plus forte, ah <rs
+                                        ref="Morand_Antoinette"
+                                        >digne amie</rs> on est bien tenté de murmurer contre
+                        les inexplicables décrets de la Providence quand on voit un sort aussi
+                        affreux réservé à tant de vertus, quand on voit <rs
+                                        ref="Morand_Jean-Antoine"
+                                        >un bon père de famille</rs> terminer ainsi une
+                        carrière aussi laborieuse ; quand on voit <rs
+                                        ref="Morand_Antoinette"
+                                        >une
+                        bonne mère</rs> , <rs
+                                        ref="Morand_Antoinette"
+                                        >une tendre épouse</rs> ,
+                        livrée pour toujours à la douleur pour prix de ses peines et de ses vertus.
+                        En vérité ces réflexions sont déchirantes, quelquefois elles
+                        m'attendrissent, mais le plus souvent elles égarent ma raison et me rendent
+                        injuste vis à vis de l'être suprême dont il n'appartient pas à des êtres
+                        faibles d'expliquer les immuables volontés. Je le sens <rs
+                                        ref="Morand_Antoinette"
+                                        >ma bien bonne amie</rs> , ce n'est que par le
+                        secours de la religion et de la Morale que vous pourrez trouver des forces
+                        pour soutenir votre existence, et sans doute l'espoir de vous retrouver
+                        quelque jour au milieu d'enfants qui vous chérissent et qui travaillent à
+                        adoucir vos maux en les partageant, doit contribuer aussi à soutenir votre
+                        courage ; combien ne devront-ils pas tous à <rs
+                                        ref="Morand_Antoinette"
+                                        >la
+                        chère amie</rs> qui dans ce moment vous est envoyée pour consolation et dont
+                        l'esprit et le bon cœur vous sont d'une si grande ressource, je l'embrasse
+                        bien tendrement, je connaissais son attachement pour le meilleur de mes amis, pour mon seul ami, et je juge bien de son
+                        affliction…</p>
+                              <p>J'ai fait part à <rs ref="Morand_de_Jouffrey_Antoine">ant.</rs> de
+                                    tout ce que vous me dites de <rs ref="Morand_Antoinette">sa
+                                          Mère</rs> et des affaires qui peuvent l'intéresser ; il
+                                    s'en rapporte absolument à tout ce qu'elle croira devoir faire
+                                    pour leurs intérêts communs. </p>
+                              <p>Dans quelles mains peuvent-ils être mieux, m'a-t-il dit, <rs
+                                          ref="Morand_Antoinette">cette bonne mère</rs> n'a jamais
+                                    travaillé que pour ses enfants et sûrement elle ne négligera pas
+                                    les moyens de conserver une partie de son ouvrage si toutefois
+                                    cela est possible. Car <rs ref="Morand_de_Jouffrey_Antoine"
+                                          >ant.</rs> pense comme moi il désire seulement que <rs
+                                          ref="Morand_Antoinette">sa tendre et bonne mère</rs>
+                                    puisse conserver de quoi vivre bien libre et bien indépendante,
+                                    c'est là ce qui l'occupe essentiellement, et s'il est vrai que
+                                    certain acte ne soit pas anéanti cela peut lui en fournir de
+                                    nouveaux moyens et comme il n'y avait point, autant qu'il le
+                                    croit, d'exception pour le mobilier il fait également partie de
+                                    l'héritage et doit par conséquent rester à <rs
+                                          ref="Morand_Antoinette">sa mère</rs> , <rs
+                                          ref="Morand_de_Jouffrey_Antoine">Antoine</rs> , comme
+                                    elle, y tient beaucoup ; tout ce qui pourra entretenir sa
+                                    douleur lorsqu'il sera dans sa famille et faire chérir et
+                                    respecter à ses enfants la mémoire de <rs
+                                          ref="Morand_Jean-Antoine">leur infortuné grand-père</rs>
+                                    sera toujours précieux à son cœur.</p>
+                              <p>Je n'avais pas besoin de nouvelles preuves de l'attachement de <rs
+                                          ref="Morand_de_Jouffrey_Marie">Mion</rs> mais ce qui
+                                    m'étonne c'est le courage et la présence d'esprit avec laquelle
+                                    elle travaille pour moi, de tous les sacrifices qu'elle fait à
+                                    ma tranquillité, celui qui lui doit coûter le plus est sans
+                                    contredit l'obligation où elle se trouve de vivre dans un
+                                    tourbillon et entourée de gens qui… j'imagine <damage/>
+                                    <rs ref="Morand_de_Jouffrey_Marie"> chère amie</rs> que vous
+                                    vous entendez ensemble sur les démarches <damage/> et qu'une
+                                    fois qu'elle aura assuré la tranquillité de quelqu<damage/>
+                                    pourra défendre vos droits et assurer vos jouissances en faisant
+                                    valoir ceux de cette personne, mais il faut pour cela que son
+                                    innocence et son civisme aient été au paravant bien reconnus. </p>
+                              <p>Je serai fâché que vous vous décidiez à aller loger de l'autre côté de l'eau
+                        quand l'âme est dans la tristesse, il ne faut pas habiter un local triste,
+                        mais je sens bien que vous n'avez pas besoin d'un appartement aussi grand et
+                        que d'ailleurs vous devez désirer en changer. Au reste quelque parti que
+                        vous preniez, j'espère que vous passerez une partie de l'année à la
+                        campagne. Embrassez bien vos petits-enfants pour moi, ils ne peuvent
+                        partager encore vos chagrins mais leurs caresses peuvent cependant les
+                        adoucir [...].</p>
+                              <p>Vous voudrez bien remettre vos lettres à <rs
+                                          ref="Morand_de_Jouffrey_Marie">Mion</rs> , la lettre
+                                    qu'elle me faisait passer était si importante, que c'est là sans
+                                    doute ce qui lui a fait craindre d'y insérer la vôtre. Ce sera
+                                    pour moi une grande satisfaction que de recevoir de vos
+                                    nouvelles, et vous donner des miennes, mais elle doit être un
+                                    peu rare jusqu'à ce que tout l'ouvrage de <rs
+                                          ref="Morand_de_Jouffrey_Marie">Mion</rs> ait pris une
+                                    entière consistance.</p>
+                        </div1>
+                  </body>
+                  <back>
+                        <div type="notes">
+                              <note n="01" anchored="true"
+                                    > Il s'agit d'aller loger soit sur les bords de la
+                        Saône, soit sur les bords du Rhône, ce qui était considéré comme une forme
+                        d'exil par l'aristocratie habituée à se loger sur la presqu'île et en
+                        particulier autour de la place Bellecour.</note>
+                        </div>
+                  </back>
+            </text>
+      </TEI>
+     
+</teiCorpus>
