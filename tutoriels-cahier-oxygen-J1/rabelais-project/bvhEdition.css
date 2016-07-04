@@ -1,0 +1,863 @@
+/* Feuille de style CSS pour la mise en forme du fichier XML TEI d'un corpus BVH */
+/**********************/
+/*TeiCorpus*/
+/* TeiCorpus teiHeader */
+/* TeiCorpus teiHeader: general metadata ; */
+/**********************/
+/* TEI */
+
+TEI:before{
+    content:
+        "Fichier TEI : " 
+        oxy_textfield(
+            edit, '@xml:id', 
+            columns, 20
+            );
+    visibility:-oxy-collapse-text;
+    display:block;
+    padding-bottom:0em;
+    font-family:BebasNeueBold;
+    color: #FFFFFF;
+    font-size:2em;
+}
+
+@font-face {
+    font-family: BebasNeueBold;
+    src: url(BebasNeueBold.otf);
+}
+
+TEI{
+display:block;
+float: right;
+padding:15px;
+width: 70%;
+background-color:#dd3333;
+border-style:solid;
+border-color:#333333;
+border-width:1px;
+-oxy-foldable:true;
+-oxy-not-foldable-child:title;
+font-family:calibri, helvetica, sans-serif;
+
+}
+
+/* TEI teiHeader: general metadata */
+TEI teiHeader:before{
+content:"Entête/Descriptif de l'oeuvre : ";
+font-family:centuryGothic, helvetica, sans-serif;
+color:#FFFFFF;
+text-transform:uppercase;
+font-weight:bold;
+font-size:1em;
+background-color:#dd3333;
+}
+
+TEI teiHeader{
+display:block;
+color:#333333;
+background-color:#dd3333;
+padding-left:15px;
+-oxy-foldable:true;
+font-family:calibri, helvetica, sans-serif;
+}
+
+TEI title{
+content:oxy_textfield(
+    columns, 70, 
+    edit, "#text"
+    );
+visibility:-oxy-collapse-text;
+display:block;
+padding-bottom:0em;
+padding-top:20px;
+}
+
+title title{
+padding-left:10px;
+}
+
+/* TEI teiHeader: fileDesc metadata */
+
+TEI teiHeader fileDesc:before{
+content:"Description bibliographique du fichier :";
+display:block;
+color:#333333;
+font-family:calibri, helvetica, sans-serif;
+font-weight:bold;
+}
+
+TEI teiHeader fileDesc{
+-oxy-foldable:true; 
+padding: 20px;
+border: 1px solid #bbbbbb;
+border-radius: 10px;
+background-color:#F8F8FF;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+titleStmt title:before{
+content:"Titre de l'oeuvre: ";
+font-weight:bold;
+
+}
+titleStmt:before{
+content: "Titre : ";
+font-family:centuryGothic, helvetica, sans-serif;
+color:#333333;
+font-weight:bold;
+font-size:1em;
+}
+titleStmt{
+-oxy-foldable:true; 
+
+}
+respStmt:before{
+content:"Mention de responsabilité : ";
+font-family:centuryGothic, helvetica, sans-serif;
+color:#333333;
+}
+
+respStmt{
+display:list-item;
+margin-left: 15px;
+}
+
+respStmt persName {
+color:#333333; 
+content:oxy_combobox(
+            edit, "@ref", 
+            values, oxy_xpath('string-join((//persName/@ref),",")'), 
+            columns, 20);
+display:inline;
+}
+respStmt persName {
+color:#333333; 
+}
+respStmt resp{
+color:#333333;
+}
+respStmt resp date:before{content:"- "}
+respStmt resp date:after{content:" - "}
+respStmt resp date{
+color:#333333;
+}
+
+editionStmt{
+display:block;
+margin-top:5px;
+-oxy-foldable:true; 
+}
+
+editionStmt:before{
+content: "Mention d'édition : "; 
+font-family:centuryGothic, helvetica, sans-serif;
+color:#333333;
+font-weight:bold;
+}
+editionStmt edition ref {
+content:
+    "URL : " 
+    oxy_xpath('string-join(@target, "")')
+    ;
+display:list-item;
+margin-left:15px;
+}
+editionStmt edition{
+content:
+    oxy_xpath('string-join(@n, "")') 
+    "° édition"
+    ;
+display:list-item;
+margin-left:15px;
+}
+editionStmt edition date{
+content:"Date : " oxy_editor(
+    type, datePicker, 
+    columns, 16, 
+    edit, "@when", 
+    format, "yyyy-MM-dd"
+    );
+display:list-item;
+margin-left:15px;
+}
+
+publicationStmt:before{
+content:"Informations sur la publication : ";
+font-family:centuryGothic, helvetica, sans-serif;
+color:#333333;
+font-weight:bold;
+margin-top:5px;
+}
+publicationStmt{
+display : block;
+margin-top:5px;
+-oxy-foldable:true; 
+}
+authority{
+content: "Responsable de la publication : ";
+display:list-item;
+margin-left:15px;
+}
+address{
+display:block;
+margin:3px;
+}
+addrLine{
+display:list-item;
+list-style-type: none;
+}
+
+availability{
+margin-top:5px;
+display:block;
+}
+availability:before{
+content:"Disponibilité : ";
+font-family:centuryGothic, helvetica, sans-serif;
+color:#333333;
+font-weight:bold;
+
+}
+availability p{
+display:block;
+}
+
+notesStmt:before{
+content: "Mention de notes : ";
+font-family:centuryGothic, helvetica, sans-serif;
+color:#333333;
+font-weight:bold;
+}
+notesStmt note{
+display:block;
+}
+notesStmt{
+margin-top:5px;
+display:block;
+-oxy-foldable:true; 
+}
+
+/* TEI teiHeader: sourceDesc metadata */
+sourceDesc:before{
+content:"Informations sur les sources : ";
+font-family:centuryGothic, helvetica, sans-serif;
+color:#333333;
+font-weight:bold;
+}
+sourceDesc{
+margin-top:5px;
+display:block;
+-oxy-foldable:true; 
+}
+
+
+encodingDesc:before{
+content: "Description de l'encodage : ";
+display:block;
+color:#333333;
+font-family:calibri, helvetica, sans-serif;
+font-weight:bold;
+}
+encodingDesc{
+display:block;
+background-color:#F8F8FF;
+-oxy-foldable:true; 
+margin-top:5px;
+padding: 20px;
+border: 1px solid #bbbbbb;
+border-radius: 10px;
+
+}
+revisionDesc:before{
+content: "Descriptif des révisions :";
+display:block;
+color:#333333;
+font-family:calibri, helvetica, sans-serif;
+font-weight:bold;
+}
+revisionDesc{
+display:block;
+background-color:#F8F8FF;
+-oxy-foldable:true; 
+margin-top:5px;
+padding: 20px;
+border: 1px solid #bbbbbb;
+border-radius: 10px;
+
+}
+/* TEI teiHeader: profileDesc metadata */
+profileDesc:before{
+content : "Description du profil :";
+display:block;
+color:#333333;
+font-family:calibri, helvetica, sans-serif;
+font-weight:bold;
+}
+profileDesc{
+-oxy-foldable:true; 
+color:#333333;
+background-color:#F8F8FF;
+margin-top:5px;
+padding: 20px;
+border: 1px solid #bbbbbb;
+border-radius: 4px;
+
+}
+profileDesc langUsage language:before{
+content:"Langue utilisée : ";
+font-weight:bold;
+color:#333333;
+display:block;
+font-family:calibri, helvetica, sans-serif;
+background-color:#F8F8FF;
+
+}
+profileDesc langUsage language{
+content:oxy_editor(
+    type, combo, 
+    edit, "@ident", 
+    values, "frm,lat", 
+    selectionMode, "single", 
+    columns, 30
+    );
+font-family:calibri, helvetica, sans-serif;
+-oxy-foldable:true;
+}
+
+
+/* Creation */
+TprofileDesc creation:before{
+content:"Informations sur la création de la pièce/lettre : ";
+font-weight:bold;
+color:#333333;
+display:block;
+font-family:calibri, helvetica, sans-serif;
+background-color:#F8F8FF;
+}
+profileDesc creation{
+-oxy-foldable:true;
+}
+/* Creation date */
+profileDesc creation date:before{
+content:"Date : " oxy_editor(
+    type, datePicker, 
+    columns, 16, 
+    edit, "@when", 
+    format, "yyyy-MM-dd"
+    );
+font-weight:bold;
+}
+profileDesc creation date{
+content:oxy_textfield(
+    columns, 70, 
+    edit, "#text"
+    );
+visibility:-oxy-collapse-text;
+color:#333333;
+background-color:#F8F8FF;
+}
+/* Creation location */
+profileDesc creation location placeName:before{
+content:"Lieu de rédaction : ";
+color:#333333;
+background-color:#F8F8FF;
+font-weight:bold;
+font-family:calibri, helvetica, sans-serif;
+display:block;
+}
+profileDesc creation location placeName{
+content:oxy_textfield(columns, 30, edit, "#text");
+visibility:-oxy-collapse-text;
+display:block;
+padding-bottom:0em;
+padding-top:10px;
+}
+profileDesc creation location placeName:after{
+visibility:-oxy-collapse-text;
+content:oxy_editor(type, combo, edit, "@ref", values, oxy_xpath('string-join(//placeName[not(@type)]/@ref, ",")'), selectionMode, "single", columns, 30);
+}
+profileDesc creation location geo:before{
+content:"Géolocalisaiton du lieu de rédaction : ";
+color:#333333;
+background-color:#F8F8FF;
+font-weight:bold;
+font-family:calibri, helvetica, sans-serif;
+display:block;
+}
+profileDesc creation location geo{
+content:oxy_textfield(columns, 30, edit, "#text");
+visibility:-oxy-collapse-text;
+display:block;
+padding-bottom:0em;
+padding-top:10px;
+}
+/* Creation : persons involved */
+
+
+
+/* TEI body : text medatadata */
+/* TEI body : text medatadata: introductive element to the letter (opener, comments, ...) ; */
+TEI facsimile{
+background-color:#333333;
+margin-bottom:-10px;
+display:block;
+padding-bottom:10px;
+-oxy-foldable:true;
+}
+figDesc ref{
+background:url(http://gallica.bnf.fr/ark:/12148/bpt6k10403469.r=Le+Disciple+de+Pantagruel.langFR);
+background-color: #cccccc;
+}
+
+/* TEI body : text */
+
+TEI text:before{
+content:"Texte : ";
+font-family:centuryGothic, helvetica, sans-serif;
+color:#FFFFFF;
+text-transform:uppercase;
+font-weight:bold;
+font-size:1em;
+background-color:#dd3333;
+}
+
+TEI text{
+-oxy-foldable:true;
+margin-top:10px;
+display:block;
+padding-top:10px;
+}
+TEI text body:before{
+content:"Body : ";
+color: #333333;
+text-transform:uppercase;
+font-weight:bold;
+font-size:1em;
+display: block;
+}
+TEI text body{
+background-color:#FFFFFF;
+line-height: 9px;
+margin:5px 6px 2px 6px;
+padding:10px 10px 10px 10px;
+-oxy-foldable:true;
+
+}
+
+TEI text front:before{
+content:"Front : ";
+color: #333333;
+text-transform:uppercase;
+font-weight:bold;
+font-size:1em;
+display: block;
+
+}
+
+TEI text front{
+align-content: center;
+color: #333333;
+line-height: 9px;
+border:1px solid #F7EFE1;
+margin:2px 6px 2px 6px;
+display:block;
+background-color:#FFFFFF;
+padding:10px 10px 10px 10px;
+-oxy-foldable:true;
+}
+
+
+pb:before{
+    content: "";
+    display: block;
+    background-color:#dd3333;
+    padding-left:40px;
+    padding-right:20px;
+    margin-top:20px;
+}
+pb{
+    content: "Page " oxy_xpath('string-join(@n, "")');
+
+}
+
+lb{
+display:block;
+content:"";
+}
+
+
+choice lb{
+display:block;
+content:"";
+}
+
+hi[rend = "larger"]{
+    font-weight:bold;
+    font-size:1.4em;
+    line-height:1.3em;
+}
+item{
+    display:list-item;
+}
+choice{
+    background-color:#F5F5DC;
+    display:inline;
+}
+choice sic{
+display:inline;
+}
+choice corr{
+display:inline;
+}
+choice orig:before{
+    content:"(";
+}
+choice orig:after{
+    content:")";
+}
+choice reg{
+    color:green;
+    
+}
+
+choice sic:before{
+    content:"(";
+}
+choice sic:after{
+    content:")";
+}
+choice corr{
+    color:red;
+    
+}
+
+sic[lb] {
+    display:inline;
+}
+
+
+fw[place ="top-center"]{
+    font-size: 9px;
+padding-left: 160px;
+font-weight: normal;
+font-style: normal;
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+clear: both;
+display: block;
+text-align: center;
+}
+
+fw[place="top-right"]{display:none;}
+
+
+TEI text body div1{
+display:block;
+background-color:#FFFFFF;
+margin-top:12px;
+margin-left:20px;
+padding-left:10px;
+}
+
+
+supplied:before{
+content:"Commentaire éditeur : ";
+background-color:#FFFFFF;
+color:#333333;
+font-style:normal;
+font-weight:bold;
+font-family:calibri, helvetica, sans-serif;
+}
+
+supplied{
+font-style:italic;
+margin-left:0px;
+padding-left:0px;
+padding-bottom:12px;
+font-family:calibri, helvetica, sans-serif;
+}
+
+damage:before{
+content:"/ document endommagé ici /";
+color:#b1905a;
+}
+
+div note{
+display:block;
+color:#FFFFFF;
+background-color:#333333;
+padding-top:12px;
+margin-left:20px;
+padding-left:10px;
+padding-bottom:12px;
+}
+del{
+text-decoration:line-through;
+}
+del del {
+    background-color: #FFCC00;
+    text-decoration: line-through; 
+    text-decoration-style:double;
+}
+
+add[place = "above"]{
+    font-size:0.8em;
+	vertical-align: super;
+	line-height: 30px;
+	background-color:yellow;
+}
+add[place = "below"]{
+    line-height: 30px;
+    font-size:0.8em;
+	vertical-align: sub;
+}
+
+add[place = "top"]{
+    display: block;
+    font-size:12px;
+}
+add[place = "margin"] {z-index:1;}
+add[place = "margin"]:hover {z-index:10;}
+
+add[place = "margin"] ptr[target]:after {
+    content: oxy_getSomeText(attr(target), 22, true)!important;
+}
+
+add[place = "margin"]:before(101) {
+    display:block;
+    border-top:1px solid #F7EFE1;
+    content:" ";
+    line-height:1px;
+    position:absolute;
+    right:100%;
+    width:300%;
+    top:-1px;
+
+}
+add[place = "margin"]:before(100) {
+    content:
+       oxy_button(transparent, true, action, oxy_action(
+          name, '[+]', 
+          description, 'Edit', 
+          icon, url('../img/tei_expand16.png'), 
+          operation, 'ro.sync.ecss.extensions.commons.operations.ChangePseudoClassesOperation', 
+          arg-setPseudoClassNames, '-oxy-edit'          
+        ), showIcon, true);
+    ;
+}
+add[place = "margin"]:-oxy-edit:before(100) {
+    content:
+       oxy_button(transparent, true, action, oxy_action(
+          name, '[-]', 
+          description, 'Done', 
+          icon, url('../img/tei_collapse16.png'), 
+          operation, 'ro.sync.ecss.extensions.commons.operations.ChangePseudoClassesOperation', 
+          arg-removePseudoClassNames, '-oxy-edit'          
+        ), showIcon, true);
+    ;
+}
+add[place = "margin"]:before{
+    display:block;
+    border-top:1px solid #F7EFE1;
+    content:" ";
+    line-height:1px;
+    position:absolute;
+    right:100%;
+    width:300%;
+    top:-1px;
+}
+add[place = "margin"]{
+    margin:2px;
+    padding:2px;
+    visibility:-oxy-collapse-text;
+    border-radius:0 5px 5px 5px;
+    border:1px solid orange;
+    font-size:12px;
+    font-weight:normal;
+    position:absolute;
+    right:2%;
+    width:30%;
+    background-color:#FFFFF0;
+    color:#555555;
+    }
+add[place = "margin"]:-oxy-edit {
+    visibility:visible;
+}
+add[place = "margin"] > * {
+    display:none;
+}
+
+add[place = "margin"]:-oxy-edit > * {
+    display:inline;
+}
+
+add[place = "bottom"]{
+    line-height: 20px;
+    display:block;
+    text-align:right;
+    margin-left: 5px;
+    margin-top: 10px;
+    padding-top: 3px;
+    padding-left:2px;
+    position: absolute;
+    width: 75%;
+    left: 15px;
+    border-color:#CC0033;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px #7e7067; 
+    background-color: #f5f5f5;
+}
+head{
+display:block;
+padding-left:15px;
+padding-bottom:5px;
+text-align: center;
+}
+index:before{
+content:"Tags :";
+font-weight:bold;
+padding-left:15px;
+padding-top:10px;
+}
+index{
+display:block;
+padding-top:10px;
+}
+orgName:after{
+visibility:-oxy-collapse-text;
+content:oxy_editor(type, combo, edit, "@ref", values, oxy_xpath('string-join(//orgName/@ref, ",")'), selectionMode, "single", columns, 20);
+display:inline;
+}
+orgName{
+color:pink;
+display:inline;
+}
+placeName{
+color:#CC6699;
+display:inline;
+}
+
+
+persName{
+color:#CC0033;
+display:inline;
+}
+text persName:after{
+visibility:-oxy-collapse-text;
+content:oxy_combobox(
+            edit, "@key", 
+            values, oxy_xpath('string-join((//persName/@key),",")'), 
+            columns, 20);
+display:inline;
+}
+text body p{
+display:block;
+padding-left:15px;
+padding-bottom:3px;
+font-family:cambria;
+}
+term{
+padding-top:10px;
+font-weight:normal;
+font-family:cambria;
+}
+text{
+}
+textLang{
+}
+time{
+}
+
+/* TEST ORIG
+orig {z-index:1;}
+orig:hover {z-index:10;}
+
+orig ptr[target]:after {
+    content: oxy_getSomeText(attr(target), 22, true)!important;
+}
+
+orig:before(101) {
+    display:block;
+    border-top:1px solid #F7EFE1;
+    content:" ";
+    line-height:1px;
+    position:absolute;
+    right:100%;
+    width:300%;
+    top:-1px;
+
+}
+orig:before(100) {
+    content:
+       oxy_button(transparent, true, action, oxy_action(
+          name, '[+]', 
+          description, 'Edit', 
+          icon, url('../img/tei_expand16.png'), 
+          operation, 'ro.sync.ecss.extensions.commons.operations.ChangePseudoClassesOperation', 
+          arg-setPseudoClassNames, '-oxy-edit'          
+        ), showIcon, true);
+    ;
+}
+orig:-oxy-edit:before(100) {
+    content:
+       oxy_button(transparent, true, action, oxy_action(
+          name, '[-]', 
+          description, 'Done', 
+          icon, url('../img/tei_collapse16.png'), 
+          operation, 'ro.sync.ecss.extensions.commons.operations.ChangePseudoClassesOperation', 
+          arg-removePseudoClassNames, '-oxy-edit'          
+        ), showIcon, true);
+    ;
+}
+orig:before{
+    display:block;
+    border-top:1px solid #F7EFE1;
+    content:" ";
+    line-height:1px;
+    position:absolute;
+    right:100%;
+    width:300%;
+    top:-1px;
+}
+orig{
+    margin:2px;
+    poriging:2px;
+    visibility:-oxy-collapse-text;
+    border-radius:0 5px 5px 5px;
+    border:1px solid orange;
+    font-size:12px;
+    font-weight:normal;
+    position:absolute;
+    right:2%;
+    width:30%;
+    background-color:#FFFFF0;
+    color:#555555;
+    }
+orig:-oxy-edit {
+    visibility:visible;
+}
+orig > * {
+    display:none;
+}
+
+orig:-oxy-edit > * {
+    display:inline;
+}
+
+orig[place = "bottom"]{
+    line-height: 20px;
+    display:block;
+    text-align:right;
+    margin-left: 5px;
+    margin-top: 10px;
+    poriging-top: 3px;
+    poriging-left:2px;
+    position: absolute;
+    width: 75%;
+    left: 15px;
+    border-color:#CC0033;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px #7e7067; 
+    background-color: #f5f5f5;
+}
+*/
