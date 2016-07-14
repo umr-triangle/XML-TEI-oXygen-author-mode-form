@@ -1,2 +1,2 @@
 my Framework for oXygen - TEI P5
-file created for gitHub - do not import in oXygen
+file created for gitHub - do not import in oXygen - to be transformed to README
